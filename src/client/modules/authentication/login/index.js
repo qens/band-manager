@@ -12,7 +12,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onClick: bindActionCreators(({username, password}) => actions.login({username, password}), dispatch)
+        onSubmit: bindActionCreators(({username, password}) => actions.login({username, password}), dispatch)
     };
 };
 

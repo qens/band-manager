@@ -1,10 +1,11 @@
 import {delay, takeEvery} from "redux-saga";
-import { call } from 'redux-saga/effects'
+import {call, put} from 'redux-saga/effects'
 import actionTypes from "./action-types";
 
-function *login(action) {
-    console.log(action);
-    yield call(delay, 500)
+function* login(action) {
+    console.log('saga', action);
+    yield call(delay, 500);
+    yield put({type: actionTypes.LOGIN_SUCCESS, username: action.username});
 }
 
 export default function* () {
