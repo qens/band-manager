@@ -7,6 +7,7 @@
     "koa": "^2.3.0",
     "koa-cors": "^0.0.16",
     "koa-middlewares": "^6.0.0",
+    "koa-route": "^3.2.0",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
     "react-redux": "^5.0.6",
