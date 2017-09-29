@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "immutable": "^3.8.1",
+    "koa": "^2.3.0",
+    "koa-cors": "^0.0.16",
+    "koa-middlewares": "^6.0.0",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
     "react-redux": "^5.0.6",
@@ -18,6 +21,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "node src/server"
   }
 }

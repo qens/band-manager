@@ -1,5 +1,5 @@
-import {delay, takeEvery} from "redux-saga";
-import {call, put} from 'redux-saga/effects'
+import {delay} from "redux-saga";
+import {call, put, takeEvery} from 'redux-saga/effects'
 import actionTypes from "./action-types";
 
 function* login(action) {
