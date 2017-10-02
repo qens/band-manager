@@ -1,22 +1,12 @@
 const koa = require('koa');
 const cors = require('@koa/cors');
 const app = new koa();
-// const middlewares = require('koa-middlewares');
 const bodyParser = require('koa-bodyparser');
 const router = require('koa-route');
 
 app.use(cors());
 app.use(bodyParser());
-// app.use(async ctx => {
-//     ctx.body = 'Hello World';
-// });
 
-// app.use(middlewares.router(app));
-
-// router.get('/test', () => {
-//     console.log(arguments);
-//     console.log(this);
-// });
 app.use(router.get('/', (ctx) => {
     console.log(arguments);
     console.log(this);
@@ -28,11 +18,6 @@ app.use(router.get('/test1', function* () {
     console.log(this);
     this.body = 'Hello world! test1';
 }));
-//
-// router.post('/login', (ctx) => {
-//     console.log(arguments);
-//     console.log(this);
-// });
 
 app.use(router.post('/validate', (ctx) => {
 
