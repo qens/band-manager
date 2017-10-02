@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@koa/cors": "2",
     "immutable": "^3.8.1",
     "koa": "^2.3.0",
-    "koa-cors": "^0.0.16",
     "koa-middlewares": "^6.0.0",
     "koa-route": "^3.2.0",
     "react": "^15.6.2",
@@ -16,6 +16,7 @@
     "redux": "^3.7.2",
     "redux-form": "^7.0.4",
     "redux-immutable": "^4.0.0",
+    "redux-logger": "^3.0.6",
     "redux-saga": "^0.15.6"
   },
   "scripts": {
